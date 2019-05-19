@@ -10,7 +10,7 @@
                         android:centerX="10%"
                         />
                     <corners
-                        android:radius="40dp"
+                        android:radius="30dp"
                         />
                 </shape>
             </item>
@@ -26,7 +26,7 @@
                         android:centerX="10%"
                         />
                     <corners
-                        android:radius="40dp"
+                        android:radius="30dp"
                         />
                 </shape>
             </item>

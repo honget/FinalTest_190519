@@ -5,86 +5,75 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".LoginActivity"
         android:orientation="vertical"
-        android:gravity="center"
-        >
-
+        android:background="#FFFFFF"
+        tools:context=".LoginActivity">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-        </FrameLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:gravity="center"
-            android:background="@drawable/login_background_gradlent"
-            android:scaleType="fitXY"
-            >
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@mipmap/ic_launcher"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sign In"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                android:gravity="center"
-                android:textColor="#FFFFFF"
-                />
-
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:scaleType="fitXY"
-            >
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
+                android:layout_height="300dp"
                 android:orientation="vertical"
-                android:gravity="center"
-                >
+                android:background="@drawable/login_background_gradlent"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@mipmap/ic_launcher"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Id or Email"
-                    />
+                    android:text="Sign in"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
 
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="240dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:paddingTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/white_round_rect">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name Or Email"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
                     <EditText
                         android:id="@+id/usrIdEdt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="아이디"
-                        />
+                        android:inputType="textEmailAddress"/>
 
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@mipmap/ic_launcher"
-                        />
+                        android:layout_gravity="right"/>
+
+                </FrameLayout>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Id or Email"
-                    />
+                    android:text="Password"/>
 
                 <FrameLayout
                     android:layout_width="match_parent"
@@ -94,40 +83,52 @@
                         android:id="@+id/usrPwEdt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="비밀번호"
-                        />
+                        android:inputType="textPassword"/>
 
                     <ImageView
                         android:layout_width="40dp"
                         android:layout_height="40dp"
                         android:src="@mipmap/ic_launcher"
-                        />
-                </FrameLayout>
+                        android:layout_gravity="right"/>
 
+                </FrameLayout>
 
                 <Button
                     android:id="@+id/submitBtn"
+                    android:layout_marginTop="30dp"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/login_btn_background"
+                    android:layout_height="60dp"
+                    android:text="Sign In"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Sing In"
-                    />
+                    android:background="@drawable/login_btn_background"
+                    android:textColor="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아이디가 없을 경우 생성하세요."
+                        />
+
+
+                </LinearLayout>
+
             </LinearLayout>
-        </LinearLayout>
+        </FrameLayout>
 
         <Button
-            android:id="@+id/test"
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/practis"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:text="Sing In"
-            />
+            android:background="@drawable/practis"/>
 
     </LinearLayout>
+
+
 </layout>
