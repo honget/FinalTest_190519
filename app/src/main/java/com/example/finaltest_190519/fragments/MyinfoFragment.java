@@ -34,6 +34,8 @@ public class MyinfoFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
 
-//        binding.homeTxtV.setText("홈 화면에 오신걸 환영~");
+
+
+        binding.myNameTxtV.setText("홈 화면에 오신걸 환영~");
     }
 }
