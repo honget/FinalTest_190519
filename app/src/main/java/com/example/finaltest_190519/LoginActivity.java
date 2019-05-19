@@ -89,11 +89,10 @@ public class LoginActivity extends BaseActivity {
         String userToken =ContextUtill.getUserToken(mContext);
 
         Log.d("로그인 처리 : ", userToken);
-//
-//        if(userToken != null){
-//
-//            moveMainPage(userToken);
-//        }
+
+        if(userToken != null){
+            moveMainPage(userToken);
+        }
     }
 
     public void moveMainPage(String userToken){
