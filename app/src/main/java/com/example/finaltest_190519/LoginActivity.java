@@ -36,6 +36,7 @@ public class LoginActivity extends BaseActivity {
 
                 String id = loginAct.usrIdEdt.getText().toString();
                 String pw = loginAct.usrPwEdt.getText().toString();
+
                 CommectSever.postRequestSingIn(mContext, id, pw, new CommectSever.JsonResponsHandler() {
                     @Override
                     public void onResponse(JSONObject json) {
